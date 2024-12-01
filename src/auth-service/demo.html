@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Form</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    .support-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 50px;
+      min-height: 100vh;
+    }
+
+    .support-info {
+      max-width: 400px;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .logo img {
+      width: 150px; /* Adjust the size of the logo */
+    }
+
+    .support-info h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .support-info p {
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .opening-times {
+      background-color: #005eff;
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .opening-times h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .opening-times p {
+      margin: 0;
+    }
+
+    /* Form Section */
+    .support-form {
+      background-color: #f4f4f4;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .support-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    .support-form input,
+    .support-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      background-color: #fff;
+    }
+
+    .support-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #005eff;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .support-form button:hover {
+      background-color: #0041cc;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .support-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .support-info,
+      .support-form {
+        margin-bottom: 30px;
+      }
+	  
+	  
+	  /* Logo Styling */
+.logo {
+  text-align: center; /* Center align the logo */
+  margin-bottom: 20px; /* Add space below the logo */
+}
+
+.logo img {
+  width: 150px; /* Set a default width for the logo */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Ensure it behaves like a block-level element */
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+/* Logo Hover Effect */
+.logo img:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+/* Responsive Design for Logo */
+@media (max-width: 768px) {
+  .logo img {
+    width: 120px; /* Reduce logo size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 100px; /* Further reduce logo size for very small screens */
+  }
+}
+
+    }
+  </style>
+</head>
+<body>
+  <div class="support-container">
+    <!-- Left Section -->
+    <div class="support-info">
+     <div class="logo">
+  <img src="https://drive.google.com/uc?export=view&id=1es_04gxYA53JZREXYmparvknybTwvh_g" alt="Logo">
+</div>
+
+      <h1>We're here to support</h1>
+      <p>Sample text. Click to select the Text Element.</p>
+      <div class="opening-times">
+        <h3>Opening Times</h3>
+        <p>Mon - Fri: 09am - 07pm<br>Sat - Sun: Closed</p>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="support-form">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter a valid email address" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Enter your message" rows="5" required></textarea>
+
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

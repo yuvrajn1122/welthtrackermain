@@ -1,0 +1,78 @@
+/* payStyle.css */
+
+.pay-container {
+    max-width: 600px;
+    margin: 100px auto; /* Increase top margin for more spacing */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Padding adjustments for the frame around the form */
+.form-frame {
+    width: 100%;
+    padding: 10%;
+}
+
+/* Styling for form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Styling for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styling for select and input elements */
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styling for the submit button */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the submission confirmation section */
+.submission-confirmation {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    background-color: #e9fce9;
+    text-align: center;
+}
+
+/* Main Content Layout */
+.layout-main-content {
+    margin-left: 250px;
+    margin-top: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

@@ -1,0 +1,42 @@
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #6f2c91; /* Your header color */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.profile-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 150px; /* Adjust as needed */
+    margin-top: 8px;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Highlight color on hover */
+}

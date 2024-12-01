@@ -1,0 +1,221 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* .page-header {
+  text-shadow: #005eff;
+  padding-bottom: 2%;
+  text-align: center; 
+} */
+
+/* Container for the support sections */
+.support-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: auto; /* Adjust height to fit content */
+}
+
+/* Left Section (Support Info) */
+.support-info {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 48%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.support-info .logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* .company-name-logo{
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+
+} */
+.support-info .logo img:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+.support-info h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.support-info p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.opening-times {
+  /* background-color: #005eff; */
+  color: white;
+  padding: 20px;
+  /* border-radius: 10px; */
+  margin-top: 20px;
+}
+
+/* Right Section (Support Form) */
+.support-form {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 48%;
+ 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+}
+
+.support-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.support-form input,
+.support-form textarea {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.support-form button {
+  width: 50%;
+  padding: 10px;
+  background-color: #00cc88; /* Green button */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.support-form button:hover {
+  /* background-color: #008f63; */
+  background-color:rgb(184, 214, 186) /* Darker green on hover */
+}
+.error-message {
+  margin-top: 15px; /* Add spacing between the button and error message */
+  color: red; /* Set text color to red */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  text-align: center; /* Center-align the error message */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .support-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px; /* Space between the two sections */
+  }
+
+  .support-info,
+  .support-form {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .support-info .logo img {
+    width: 130px; /* Slightly reduce logo size for mobile */
+  }
+}
+img, svg {
+  vertical-align: middle;
+  height: 225px;
+  width: 510px;
+  border: none;
+}
+
+.company-name {
+  background-color: #dfdfe2;
+  text-align: center;
+  /* padding-bottom: inherit; */
+}
+/* .header-text{
+  font-size: 2.5rem;
+  text-align: right;
+} */
+.company-name-logo {
+  display: flex;
+  align-items: center;
+  /* background-color: #a4a4a9; */
+ 
+}
+
+.company-name-logo2 img {
+  height: 60px !important ;
+  width: auto; /* Maintain aspect ratio */
+  border: none;
+ 
+}
+.header {
+  background-color: #a7abb5 !important;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.header-text {
+  font-size: 24px; /* Adjusts the text size */
+  margin: 0; /* Removes default margin */
+  font-weight: bold; /* Makes the text bold (optional) */
+  background-color: #fff;
+}
+.submit-button {
+  display: block; /* Makes the button a block element */
+  margin: 0 auto; /* Centers the button horizontally */
+  padding: 10px 20px; /* Adds padding for better click area */
+  background-color: #00cc88; /* Green background */
+  color: white; /* White text */
+  font-size: 1rem; /* Medium text size */
+  font-weight: bold; /* Bold text */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounds the corners */
+  cursor: pointer; /* Changes cursor to pointer */
+  text-transform: uppercase; /* Makes text all uppercase */
+  transition: background-color 0.3s ease; /* Adds smooth hover effect */
+}
+
+/* Add a hover effect */
+.submit-button:hover {
+  background-color: #7f968f; /* Darker green on hover */
+}
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 34%;
+}
+
+
+

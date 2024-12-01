@@ -1,0 +1,60 @@
+/* Add these styles to center the form */
+
+
+.customer-form {
+    width: 100%;
+    max-width: 600px; /* Increase maximum width of the form */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 30px; /* Increase inner padding */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Increase inner padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.submit-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 18px; /* Increase padding for button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Larger font size for button */
+}
+
+.submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.error {
+    color: red; /* Red error message */
+    font-size: 0.875em; /* Smaller font size for errors */
+}
+
+.success-message {
+    color: green; /* Green success message */
+    margin-bottom: 20px; /* Space below success message */
+}
+.add-customer-container {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    padding-left: 40%;
+    padding-top: 7%;
+}

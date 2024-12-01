@@ -1,0 +1,218 @@
+
+img, svg {
+    vertical-align: middle !important;
+    height: 129px !important;
+    width: 159px !important; 
+    border: none ;
+    /* padding-top: 5px !important;*/
+} 
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+} */
+
+/* Sidebar */
+.sidebar {
+    width: 235px;
+    background-color: #a7abb5;
+    color: #2c3e50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar Menu Items */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+/* Submenu */
+.submenu {
+    margin-left: 15px;
+}
+
+.submenu li a {
+    font-size: 14px;
+    color: #b4cece;
+}
+
+.submenu li a:hover {
+    color: #1abc9c;
+}
+
+/* Main Content */
+.layout-main-content {
+    margin-left: 235px;
+    padding: 20px;
+    background-color: #ffffff;
+    flex-grow: 1;
+    overflow-y: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: margin-left 0.3s ease;
+}
+
+.layout-main-content header {
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.layout-main-content footer {
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #7f8c8d;
+}
+
+.layout-main-content .content-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+/* Card Styles */
+.layout-main-content .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.layout-main-content .card-header {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.layout-main-content .card-body {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+
+/* Menu Items */
+.menu-items button {
+    background-color: transparent;
+    color: rgb(8, 8, 8);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Top Menu */
+.top-menu {
+    padding: 15px;
+    background-color: #e7e3e3;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 253px); /* Adjust for sidebar width */
+    position: fixed;
+    top: 0;
+    left: 235px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+/* Flexbox for Menu Items */
+.menu-items {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Sidebar */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .layout-main-content {
+        margin-left: 0;
+    }
+
+    .top-menu {
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    /* Logo */
+    .logo {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .layout-main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .top-menu {
+        left: 0;
+        width: 100%;
+    }
+}
+.sidebar-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #171818;
+    padding-top: 15%;
+}

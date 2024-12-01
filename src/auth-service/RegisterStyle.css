@@ -1,0 +1,317 @@
+/* General Container */
+.containernew {
+  max-width: 950px !important;
+  margin: 10px auto !important;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* padding: 40px; */
+}
+.error-message {
+  margin-top: 0%;
+  color: red;
+  font-size: 0.9rem;
+  text-align: left;
+}  
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+
+
+/* Column Styling */
+.col {
+  flex: 1;
+  padding: 5px;
+}
+
+/* Image Container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9f5ff;
+  padding: 20px; /* Optional padding for spacing */
+}
+
+.image {
+  width: 100%;            /* Make the image responsive */
+  max-width: 300px;       /* Maximum width */
+  max-height: 200px;      /* Reduce the height */
+  border-radius: 5px;     /* Rounded corners */
+  object-fit: contain;    /* Ensures the entire image is visible */
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Styling */
+.form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 10px !important;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+  text-align: left !important;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Checkbox Styling */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+/* Header styling */
+.header {
+  position: relative; /* Positions the header at the top of the page */
+  width: 100%;
+  background-color: #f5f5f5; /* Light background for the header */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.logo h1 {
+  margin: 0 10px 0 0; /* Add spacing between text and image */
+  font-size: 24px;
+  color: #070707; /* Adjust color */
+}
+
+.logo img {
+  max-width: 50px; /* Adjust image size */
+  height: auto;
+}
+/* Checkbox Group Styling */
+.checkbox-group {
+  display: flex;
+  align-items: center; /* Align checkbox and label vertically */
+  gap: 10px; /* Space between the checkbox and label */
+  margin-bottom: 15px; /* Spacing below the group */
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 20px; /* Customize checkbox size */
+  height: 20px; /* Customize checkbox size */
+  cursor: pointer; /* Pointer cursor for better UX */
+  accent-color: #4caf50; /* Checkbox accent color */
+}
+
+.checkbox-label {
+  font-size: 14px; /* Label font size */
+  color: #333; /* Text color */
+  cursor: pointer; /* Allow clicking the label to toggle the checkbox */
+}
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Styling */
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup Logo Section */
+.popup-logo {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: #2a1c1c24;
+}
+
+.popup-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.popup-logo h1 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Popup Title */
+.popup h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Form Styling */
+.popup .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.popup .form-group label {
+  font-size: 14px;
+  color: #555;
+}
+
+.popup .input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.popup .btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #27b3d6;
+  width: 30%;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.popup .btn.close-btn {
+  background-color: #0f0f0f;
+  width: 30%;
+}
+
+.popup .btn:hover {
+  background-color: #3e8e41;
+}
+
+.popup .btn.close-btn:hover {
+  background-color: #73a6b9;
+}
+
+/* Success Popup */
+.success-popup h2 {
+  font-size: 18px;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.success-popup .btn {
+  background-color: #4caf50;
+}
+
+.success-popup .btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.popup-text{
+text-align: left !important;
+}
+.buttonregister {
+  /* padding: 10px 15px; */
+  /* margin: 5px; */
+  /* border: none; */
+  border-radius: 15px;
+  background-color: #27b3d6;
+  width: 60%;
+  color: white;
+  /* cursor: pointer; */
+  /* font-size: 14px; */
+  /* transition: background-color 0.3s ease; */
+  height: 40px; /* Set a fixed height for the button */
+  display: block; /* Make button block-level to allow centering */
+  margin: 0 auto; /* Center button horizontally */
+}
+.login-redirect {
+  width: 100%;
+  text-align: right;
+  color: rgb(104, 92, 92);
+  display: block; /* Make button block-level to allow centering */
+  margin: 0 auto; /* Center button horizontally */
+}
