@@ -47,56 +47,20 @@ Top navigation links
     /* align-items: center; */
     margin-top: 20px;
     padding-left: 4%;
+    padding-bottom: 11%;
 }
 
 /* Form and input styles */
-form {
+/* form {
     width: 100%;
     max-width: 500px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+} */
 
-form label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: #333;
-}
 
-form input,
-form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-form input:focus,
-form select:focus {
-    border-color: #4caf50;
-    outline: none;
-}
-
-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #45a049;
-}
 
 /* Table styles for categories */
 table {
@@ -143,15 +107,128 @@ table tr:hover {
         margin-bottom: 10px;
     }
 
-    .tab-content {
-        align-items: flex-start;
-    }
-
-    form {
-        width: 90%;
-    }
+    
 
     table {
         font-size: 14px;
     }
 }
+.budget-form {
+    width: 83%;
+    margin: 0% -4% !important;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+  
+  .budget-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .budget-form input,
+  .budget-form select {
+  
+        width: 45%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+   
+  }
+  
+  .budget-form input:focus,
+  .budget-form select:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+ /* .submit-btn{
+  width: 20%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+} */
+
+
+
+
+
+/* General Button Styles */
+.submit-btn {
+    width: 22%;
+    /* max-width: 300px; */
+    /* padding: 12px 20px; */
+    /* font-size: 16px; */
+    /* font-weight: bold; */
+    color: #fff;
+    /* background-color: #4caf50; */
+    border: none;
+    border-radius: 39px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    margin: 10px auto;
+    /* display: block; */
+    /* height: 71%; */
+}
+
+/* Hover State */
+.submit-btn:hover {
+    background-color: #45a049; /* Slightly darker green */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+/* Focus State */
+.submit-btn:focus {
+    outline: none;
+    border: 2px solid #2e7d32; /* Adds a visible focus border */
+    background-color: #3e8e41; /* Slightly darker */
+}
+
+/* Disabled State */
+.submit-btn:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Additional Style for Buttons with Icons (Optional) */
+.submit-btn .icon {
+    margin-right: 8px; /* Adds spacing between icon and text */
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+/* Responsive Button */
+@media (max-width: 768px) {
+    button {
+        width: 90%; /* Adjust button width for smaller screens */
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+  .budget-form .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Optional: Add responsive styling */
+  @media (max-width: 768px) {
+    .budget-form {
+      width: 90%;
+    }
+  }
+  
