@@ -19,6 +19,7 @@ import ResetPassword from './coman/ResetPassword';
 import VerifyEmailPage from './coman/VerifyEmailPage';
 import SupportForm from './Contactus/SupportForm';
 import DemoLayout from './Dashboard/DemoLayout';
+import AddExpenses from './Component/ManageExpenses/AddExpenses';
 
 
 <link
@@ -42,6 +43,7 @@ function App() {
         <Route path="/verifyEmail" element={<VerifyEmailPage />} />
         <Route path="/contact-Us" element={<SupportForm />} />
         <Route path="/demoLayot" element={<DemoLayout />} />
+        
         <Route path="/" element={<Layout />}>
           <Route element={<PrivateRoute />}>
             <Route path="dashboard" element={<Dashboard />} />
@@ -51,6 +53,7 @@ function App() {
             <Route path="customerList" element={<CustomerList />} />
             <Route path="addCustomer" element={<AddCustomer />} />
             <Route path="payCustomer" element={<Pay />} />
+            <Route path="/addExpense" element={<AddExpenses />} />
           </Route>
         </Route>
       </Routes>
