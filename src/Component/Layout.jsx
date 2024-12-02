@@ -7,13 +7,19 @@ import { Link, Outlet } from 'react-router-dom';
 const Layout = () => {
     const [isDashboardOpen, setIsDashboardOpen] = useState(false);
     const [isAddClientOpen, setIsAddClientOpen] = useState(false);
- 
+    const [isExpenseMenuOpen, setIsExpenseMenuOpen] = useState(false);
+    const [isAccountSettinsOpen, setIsAccountSettinsOpen] = useState(false);
     const toggleDashboardMenu = () => {
         setIsDashboardOpen(!isDashboardOpen);
     };
-
+    const toggAccountSettingsMenu = () => {
+        setIsAccountSettinsOpen(!isAccountSettinsOpen);
+    };
     const toggleAddClientMenu = () => {
         setIsAddClientOpen(!isAddClientOpen);
+    };
+    const toggleExpenseMenu = () => {
+        setIsExpenseMenuOpen(!isExpenseMenuOpen);
     };
 
     const goToProfile = () => {
@@ -24,26 +30,26 @@ const Layout = () => {
     const handleLogout = () => {
         // Clear token from cookies
         document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-        
+
         // Redirect to login page
         window.location.href = "/login";
     };
-    
 
 
-  return (
-    <div className="layout-container">
-        
+
+    return (
+        <div className="layout-container">
+
             {/* Sidebar for navigation */}
             <nav className="sidebar">
-            <div className="logo-dashbord">
-            <img src="/src/assets/welthTrackerFinalLogo.svg" alt="Logo-dashbord-image" />
-          </div>
+                <div className="logo-dashbord">
+                    <img src="/src/assets/welthTrackerFinalLogo.svg" alt="Logo-dashbord-image" />
+                </div>
                 <h2 className="sidebar-header">Menu</h2>
                 <ul>
                     <li>
                         <a href="#!" onClick={toggleDashboardMenu}>
-                            Dashboard {isDashboardOpen }
+                            Dashboard {isDashboardOpen}
                         </a>
                         {isDashboardOpen && (
                             <ul className="submenu">
@@ -54,7 +60,7 @@ const Layout = () => {
                     </li>
                     <li>
                         <a href="#!" onClick={toggleAddClientMenu}>
-                            Add Client {isAddClientOpen }
+                            Add Client {isAddClientOpen}
                         </a>
                         {isAddClientOpen && (
                             <ul className="submenu">
@@ -64,23 +70,38 @@ const Layout = () => {
                         )}
                     </li>
                     <li>
-                        <a href="#!" onClick={toggleAddClientMenu}>
-                            Pay Reciver {isAddClientOpen }
+                        <a href="#!" onClick={toggleExpenseMenu}>
+                            Manage Expense {isExpenseMenuOpen}
                         </a>
-                        {isAddClientOpen && (
+                        {isExpenseMenuOpen && (
                             <ul className="submenu">
-                                <li><Link to="/addCustomer">Pay</Link></li>
-                                <li><Link to="/customerList">Status</Link></li>
+                                <li>
+                                    <Link to="/expenseType">Expense Type</Link>
+                                </li>
+                                <li>
+                                    <Link to="/addExpense">Add Expense</Link>
+                                </li>
                             </ul>
                         )}
                     </li>
                     <li><Link to="/calendar">Calendar</Link></li>
+                    <li>
+                        <a href="#!" onClick={toggAccountSettingsMenu}>
+                           Account Settings {isAccountSettinsOpen}
+                        </a>
+                        {isAccountSettinsOpen && (
+                            <ul className="submenu">
+                                <li><Link to="/profile">Profile</Link></li>
+                               
+                            </ul>
+                        )}
+                    </li>
                 </ul>
             </nav>
 
             <div>
                 <header className="top-menu">
-                  <h5>Wealth Tracker!!</h5>
+                    <h5>Wealth Tracker!!</h5>
                     <div className="menu-items">
                         <button onClick={goToProfile}>Profile</button>
                         <button onClick={handleLogout}>Logout</button>
@@ -90,11 +111,11 @@ const Layout = () => {
 
             <div className=".layout-main-content">
                 <Outlet />
-                
+
             </div>
-   
+
         </div>
-  );
+    );
 };
 
 export default Layout;
