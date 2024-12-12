@@ -1,11 +1,12 @@
 /* General Container */
 .containernew {
-  max-width: 950px !important;
+  max-width: 868px !important;
   margin: 10px auto !important;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
   /* padding: 40px; */
+  /* height: 99%; */
 }
 .error-message {
   margin-top: 0%;
@@ -15,15 +16,24 @@
 }  
 
 
-.card {
+/* .register-card {
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s;
+} */
+
+.register-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  /* max-width: 500px; */
+  height: 70%;
+  background-color: #eff3f6;
 }
-
-
 
 /* Column Styling */
 .col {
@@ -58,8 +68,9 @@
 }
 
 /* Form Styling */
-.form {
+.register-form {
   width: 100%;
+  height: 50%;
 }
 
 .form-group {
@@ -294,20 +305,24 @@
 text-align: left !important;
 }
 .buttonregister {
-  /* padding: 10px 15px; */
-  /* margin: 5px; */
-  /* border: none; */
   border-radius: 15px;
   background-color: #27b3d6;
   width: 60%;
   color: white;
-  /* cursor: pointer; */
-  /* font-size: 14px; */
-  /* transition: background-color 0.3s ease; */
   height: 40px; /* Set a fixed height for the button */
   display: block; /* Make button block-level to allow centering */
   margin: 0 auto; /* Center button horizontally */
+  text-align: center; /* Align the text inside the button */
+  /*line-height: 40px; /* Vertically center the text
+  font-size: 14px; /* Adjust font size */
+  cursor: pointer; /* Make the cursor a pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth color transition */
 }
+
+.buttonregister:hover {
+  background-color: #1e90b0; /* Slightly darker color for hover effect */
+}
+
 .login-redirect {
   width: 100%;
   text-align: right;
@@ -315,3 +330,11 @@ text-align: left !important;
   display: block; /* Make button block-level to allow centering */
   margin: 0 auto; /* Center button horizontally */
 }
+
+.register-page {
+  flex-direction: column;
+  height: 59vh;
+  align-content: center;
+  width: 105%;
+}
+

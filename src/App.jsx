@@ -20,7 +20,7 @@ import VerifyEmailPage from './coman/VerifyEmailPage';
 import SupportForm from './Contactus/SupportForm';
 import DemoLayout from './Dashboard/DemoLayout';
 import AddExpenses from './Component/ManageExpenses/AddExpenses';
-
+import FetchImage from './coman/FetchImage';
 
 <link
     rel="stylesheet"
@@ -33,6 +33,19 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+
+      <Route
+          path="/"
+          element={
+            <div>
+              <iframe
+                src="/myTrckAssistantLandingPage/index.html"
+                style={{ width: '100%', height: '100vh', border: 'none' }}
+                title="MyTrckAssistantLandingPage"
+              />
+            </div>
+          }
+        />
         <Route path="/home" element={<HomePage />} />
        
         <Route path="/login" element={<Login />} />
@@ -43,6 +56,8 @@ function App() {
         <Route path="/verifyEmail" element={<VerifyEmailPage />} />
         <Route path="/contact-Us" element={<SupportForm />} />
         <Route path="/demoLayot" element={<DemoLayout />} />
+
+        <Route path="/demoimg" element={<FetchImage />} />
         
         <Route path="/" element={<Layout />}>
           <Route element={<PrivateRoute />}>

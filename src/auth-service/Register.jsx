@@ -137,9 +137,9 @@ function Register() {
   };
 
   return (
-    <div>
+    <div className="register-page">
       {/* Header Section */}
-      <header className="header">
+      <header className="header-login">
         <div className="logo">
           <img src="/src/assets/welthTrackerFinalLogo.svg" alt="Logo" />
           <h1>Wealth Tracker</h1>
@@ -148,12 +148,12 @@ function Register() {
 
       {/* Main Container */}
       <div className="containernew">
-        <div className="card">
+        <div className="register-card">
           <div className="row">
             {/* Form Section */}
             <div className="col">
               <h2 className="title">Sign Up</h2>
-              <form className="form" onSubmit={handleSubmit}>
+              <form className="register-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="fullname" className="label">Full Name</label>
                   <input
