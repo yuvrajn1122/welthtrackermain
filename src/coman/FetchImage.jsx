@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const ImageDisplay = ({ documetTypeId, userId }) => {
+const FetchImage = ({ documetTypeId, userId }) => {
   const [imageData, setImageData] = useState(null);
   const [imageExtension, setImageExtension] = useState(null);
   const [error, setError] = useState(null);
@@ -75,4 +75,4 @@ const ImageDisplay = ({ documetTypeId, userId }) => {
   );
 };
 
-export default ImageDisplay;
+export default FetchImage;

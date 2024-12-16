@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import './layout.css'; // Ensure to style the layout as per your CSS requirements
 import { Link, Outlet } from 'react-router-dom';
 
+// import FetchImage from '../coman/FetchImage.jsx';
+import FetchImage from "../coman/fetchImage";
+
 
 
 const Layout = () => {
@@ -44,6 +47,7 @@ const Layout = () => {
             <nav className="sidebar">
                 <div className="logo-dashbord">
                     <img src="/src/assets/welthTrackerFinalLogo.svg" alt="Logo-dashbord-image" />
+                    {/* <FetchImage documetTypeId="1" userId="1" /> */}
                 </div>
                 <h2 className="sidebar-header">Menu</h2>
                 <ul>

@@ -20,7 +20,8 @@ import VerifyEmailPage from './coman/VerifyEmailPage';
 import SupportForm from './Contactus/SupportForm';
 import DemoLayout from './Dashboard/DemoLayout';
 import AddExpenses from './Component/ManageExpenses/AddExpenses';
-import FetchImage from './coman/FetchImage';
+import FetchImage from './coman/fetchImage';
+
 
 <link
     rel="stylesheet"
