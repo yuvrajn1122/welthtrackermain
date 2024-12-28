@@ -79,7 +79,6 @@ const AddCustomer = () => {
     };
 
     return (
-        <>
         <div className="add-customer-container">
             <h2>Add New Customer</h2>
 
@@ -88,7 +87,7 @@ const AddCustomer = () => {
             <form onSubmit={handleSubmit} className="customer-form">
                 {/* Name Field */}
                 <div className="form-group">
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name" className="form-label">Name</label>
                     <input
                         type="text"
                         id="name"
@@ -96,13 +95,14 @@ const AddCustomer = () => {
                         value={customerData.name}
                         onChange={handleChange}
                         placeholder="Enter customer name"
+                        className="c-form-input"
                     />
                     {formErrors.name && <span className="error">{formErrors.name}</span>}
                 </div>
 
                 {/* Email Field */}
                 <div className="form-group">
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email" className="form-label">Email</label>
                     <input
                         type="email"
                         id="email"
@@ -110,13 +110,14 @@ const AddCustomer = () => {
                         value={customerData.email}
                         onChange={handleChange}
                         placeholder="Enter customer email"
+                        className="c-form-input"
                     />
                     {formErrors.email && <span className="error">{formErrors.email}</span>}
                 </div>
 
                 {/* Phone Field */}
                 <div className="form-group">
-                    <label htmlFor="phone">Phone</label>
+                    <label htmlFor="phone" className="form-label">Phone</label>
                     <input
                         type="text"
                         id="phone"
@@ -124,13 +125,14 @@ const AddCustomer = () => {
                         value={customerData.phone}
                         onChange={handleChange}
                         placeholder="Enter customer phone"
+                        className="form-input"
                     />
                     {formErrors.phone && <span className="error">{formErrors.phone}</span>}
                 </div>
 
                 {/* Address Field */}
-                <div className="form-group">
-                    <label htmlFor="address">Address</label>
+                <div className="c-form -group">
+                    <label htmlFor="address" className="c-form-label">Address</label>
                     <input
                         type="text"
                         id="address"
@@ -138,6 +140,7 @@ const AddCustomer = () => {
                         value={customerData.address}
                         onChange={handleChange}
                         placeholder="Enter customer address"
+                        className="c-form-input"
                     />
                     {formErrors.address && <span className="error">{formErrors.address}</span>}
                 </div>
@@ -146,7 +149,6 @@ const AddCustomer = () => {
                 <button type="submit" className="submit-btn">Add Customer</button>
             </form>
         </div>
-        </>
     );
 };
 

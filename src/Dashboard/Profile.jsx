@@ -212,7 +212,7 @@ const ProfileManager = () => {
             {activeTab === 'personalDetails' && (
                 <div className="profile-details">
                     <div className="details">
-                        <div className="form-group">
+                        <div className="profile-form-group">
                             <label htmlFor="first-name">First Name *</label>
                             <input
                                 type="text"

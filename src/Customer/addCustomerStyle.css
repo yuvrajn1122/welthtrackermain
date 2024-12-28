@@ -58,3 +58,24 @@ input[type="email"] {
     padding-left: 40%;
     padding-top: 7%;
 }
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block; /* Ensures the label is on a new line */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Optional: makes the label text bold */
+}
+
+.c-form-input {
+    width: 100%; /* Full width for input */
+    padding: 8px; /* Padding for input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.error {
+    color: red; /* Error message color */
+    font-size: 12px; /* Error message font size */
+}

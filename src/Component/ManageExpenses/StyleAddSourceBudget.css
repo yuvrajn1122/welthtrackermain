@@ -1,0 +1,204 @@
+/* Form Container */
+.ad-form-container {
+    margin: 6% 18% !important;
+    background-color: #ffffff !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 81%;
+    height: 50%;  /* Increased height */
+}
+.ad-form {
+    height: 265px;
+}
+/* Tabs */
+.ad-tabs {
+    display: flex;
+    gap: 100px;
+    /* margin-bottom: 10px; */
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* Titles */
+.ad-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+    color: #171818;
+    padding-left: 10px;
+    padding-right: 35px;
+}
+
+.ad-subtitle {
+    font-size: 1.2rem;
+    font-weight: normal;
+    /* margin-bottom: 20px; */
+    color: #7f8c8d;
+    padding-left: 30%;
+    padding-top: 5px;
+}
+
+/* Form Group */
+.ad-form-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 11px;
+    gap: 5%;
+    text-align: left; /* Ensure consistent spacing between label and input */
+}
+
+/* Label */
+.ad-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2c3e50;
+    width: 150px; /* Fixed width for proper alignment */
+    padding-left: 3%; /* Align label text to the right */
+}
+
+/* Input */
+.ad-input {
+    width: 45% !important; /* Ensure reduced width for input fields */
+    padding: 10px;
+    font-size: 14px !important;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.ad-input:focus {
+    border-color: #1abc9c;
+    background-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .ad-label {
+        width: 100px; /* Reduce label width for smaller screens */
+    }
+
+    .ad-input {
+        width: 200px; /* Adjust input width for smaller screens */
+    }
+}
+
+/* Submit Button */
+.ad-submit-btn {
+    /* display: flex; */
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    padding-left: 26%;
+}
+
+.ad-submit-btn button {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 90px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+.ad-submit-btn button:hover {
+    background-color: #16a085;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .ad-form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .ad-title, .ad-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .ad-input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .ad-submit-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+
+.ad-popup {
+    position: fixed; /* Fixed position to stay in the viewport */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1000; /* Ensure it appears above other elements */
+    opacity: 1; /* Fully visible */
+    transition: opacity 0.5s ease; /* Smooth transition for fading out */
+}
+
+.popup.fade-out {
+    opacity: 0; /* Fade out effect */
+}
+
+  
+  .ad-tab-content {
+    /* display: flex
+; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    margin-top: 20px;
+    padding-left: 4%;
+    padding-bottom: 4%;
+}
+  .popup-top-right {
+    position: fixed; /* Use fixed positioning */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: opacity 0.5s ease; /* Smooth fade out */
+  }
+  
+  .fade-out {
+    opacity: 0; /* Fade out effect */
+  }
+  .empty-list {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .empty-list img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+  }
+  .ad-pagination {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align items to the right */
+    margin-top: 20px; /* Add some space above the pagination */
+  }
+  
+  .ad-pagination span {
+    margin: 0 10px; /* Add some space between the pagination items */
+    cursor: pointer; /* Change cursor to pointer for clickable items */
+  }
+  
+  .ad-pagination span:hover {
+    text-decoration: underline; /* Optional: Add underline on hover for better UX */
+  }
+ 

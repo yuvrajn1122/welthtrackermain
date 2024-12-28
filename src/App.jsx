@@ -21,6 +21,8 @@ import SupportForm from './Contactus/SupportForm';
 import DemoLayout from './Dashboard/DemoLayout';
 import AddExpenses from './Component/ManageExpenses/AddExpenses';
 import FetchImage from './coman/fetchImage';
+import Invoice from './coman/Invoice';
+import AddSourceBudget from './Component/ManageExpenses/AddSourceBudget';
 
 
 <link
@@ -57,7 +59,7 @@ function App() {
         <Route path="/verifyEmail" element={<VerifyEmailPage />} />
         <Route path="/contact-Us" element={<SupportForm />} />
         <Route path="/demoLayot" element={<DemoLayout />} />
-
+        <Route path="/invoice" element={<Invoice />} />
         <Route path="/demoimg" element={<FetchImage />} />
         
         <Route path="/" element={<Layout />}>
@@ -70,6 +72,7 @@ function App() {
             <Route path="addCustomer" element={<AddCustomer />} />
             <Route path="payCustomer" element={<Pay />} />
             <Route path="/addExpense" element={<AddExpenses />} />
+            <Route path="/source-budget" element={<AddSourceBudget />} />
           </Route>
         </Route>
       </Routes>

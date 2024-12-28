@@ -80,7 +80,7 @@ const Layout = () => {
                         {isExpenseMenuOpen && (
                             <ul className="submenu">
                                 <li>
-                                    <Link to="/expenseType">Expense Type</Link>
+                                <Link to="/source-budget">Source Budget</Link>
                                 </li>
                                 <li>
                                     <Link to="/addExpense">Add Expense</Link>
